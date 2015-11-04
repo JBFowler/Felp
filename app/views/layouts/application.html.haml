@@ -1,0 +1,20 @@
+!!! 5
+%html(lang="en-US")
+  %head
+    %title Felp
+    %meta(charset="UTF-8")
+    %meta(name="viewport" content="width=device-width, initial-scale=1.0")
+    %meta(name="keywords" content="Business, Ratings, Reviews")
+    %meta(name="description" content="Business Ratings and Reviews")
+    %meta(name="author" content="Joe Fowler")
+    = csrf_meta_tag
+    = stylesheet_link_tag "application"
+    = javascript_include_tag "application"
+  %body
+    %header
+      = render 'shared/header'
+    .container
+      = render 'shared/messages'
+      = yield
+    %footer
+      / &copy 2013 Yelp
