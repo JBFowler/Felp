@@ -1,0 +1,22 @@
+.h3 Add Business
+%br
+.well.col-md-8
+  %form
+    .col-md-5
+      .form-group
+        %label Business Name
+        %input.form-control
+      .form-group
+        %label Location
+        %input.form-control{:placeholder => "Location"}
+      .form-group
+        %label File input
+        %input{:type => "file"}
+        %p.help-block Upload a .jpg image.
+    .col-md-7
+      .form-group
+        %label Description
+        %textarea.form-control{:placeholder => "Description", :rows => 4}
+    .col-md-12
+      .form-group
+        %button.btn.btn-default Add Business
