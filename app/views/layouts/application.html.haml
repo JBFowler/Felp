@@ -8,8 +8,8 @@
     %meta(name="description" content="Business Ratings and Reviews")
     %meta(name="author" content="Joe Fowler")
     = csrf_meta_tag
-    = stylesheet_link_tag "application"
-    = javascript_include_tag "application"
+    = stylesheet_link_tag "application", 'data-turbolinks-track' => true
+    = javascript_include_tag "application", 'data-turbolinks-track' => true
   %body
     %header
       = render 'shared/header'
