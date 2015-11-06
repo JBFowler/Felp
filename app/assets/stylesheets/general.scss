@@ -1,0 +1,24 @@
+header {
+  background: repeating-linear-gradient( 
+    to left top,
+    $main-red, 
+    $dark-red); 
+    /*repeating-linear-gradient(
+    45deg,
+    $main-red,
+    $main-red 10px,
+    darken($main-red, 2%) 10px,
+    darken($main-red, 1%) 20px*/
+
+  border-bottom: 1px solid $dark-red;
+  -webkit-box-shadow: 0 0 6px $dark-gray;
+}
+
+.container {
+  padding-left: 50px;
+  padding-right: 50px;
+}
+
+ul {
+  list-style: none;
+}

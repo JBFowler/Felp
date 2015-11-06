@@ -1,63 +1,35 @@
-%nav.navbar.navbar-default
-  .container
-    / Brand and toggle get grouped for better mobile display
-    .navbar-header
-      %button.navbar-toggle.collapsed{"aria-expanded" => "false", "data-target" => "#bs-example-navbar-collapse-1", "data-toggle" => "collapse", :type => "button"}
-        %span.sr-only Toggle navigation
-        %span.icon-bar
-        %span.icon-bar
-        %span.icon-bar
-      %a.navbar-brand{:href => "#"} Felp
-    / Collect the nav links, forms, and other content for toggling
-    #bs-example-navbar-collapse-1.collapse.navbar-collapse
-      %ul.nav.navbar-nav
-        %li.active
-          %a{:href => "#"}
-            Home
-            %span.sr-only (current)
-        %li
-          %a{:href => "#"} Write a Review
-        %li
-          %a{:href => "#"} Businesses
-        / %li.dropdown
-        /   %a.dropdown-toggle{"aria-expanded" => "false", "aria-haspopup" => "true", "data-toggle" => "dropdown", :href => "#", :role => "button"}
-        /     Dropdown
-        /     %span.caret
-        /   %ul.dropdown-menu
-        /     %li
-        /       %a{:href => "#"} Action
-        /     %li
-        /       %a{:href => "#"} Another action
-        /     %li
-        /       %a{:href => "#"} Something else here
-        /     %li.divider{:role => "separator"}
-        /     %li
-        /       %a{:href => "#"} Separated link
-        /     %li.divider{:role => "separator"}
-        /     %li
-        /       %a{:href => "#"} One more separated link
-      %form.navbar-form.navbar-left{:role => "search"}
-        .form-group
-          %input.form-control{:placeholder => "Search", :type => "text"}
-        %button.btn.btn-default{:type => "submit"} Submit
-      %ul.nav.navbar-nav.navbar-right
-        %li
-          %a{:href => "#"} Log in
-        %li
-          %a{:href => "#"} Sign Up
-        / %li.dropdown
-        /   %a.dropdown-toggle{"aria-expanded" => "false", "aria-haspopup" => "true", "data-toggle" => "dropdown", :href => "#", :role => "button"}
-        /     Dropdown
-        /     %span.caret
-        /   %ul.dropdown-menu
-        /     %li
-        /       %a{:href => "#"} Action
-        /     %li
-        /       %a{:href => "#"} Another action
-        /     %li
-        /       %a{:href => "#"} Something else here
-        /     %li.divider{:role => "separator"}
-        /     %li
-        /       %a{:href => "#"} Separated link
-    / /.navbar-collapse
-  / /.container-fluid
+.container
+  #header-main
+    .row
+      .col-md-2#header-left
+        felp
+      .col-md-8#header-center
+        .row#search-bar
+          %form
+            .form-group.col-md-5
+              .input-group
+                .input-group-addon Find
+                %input.form-control.input-sm(type="text" placeholder="golf, movies, food")
+            .form-group.col-md-5
+              .input-group
+                .input-group-addon Near
+                %input.form-control.input-sm(type="text" placeholder="Birmingham, AL")
+            .form-group.col-md-2
+              %button.btn.btn-sm#search-icon(type="search")
+                .glyphicon.glyphicon-search
+        .row#navigation
+          %ul.list-inline.col-md-12
+            %li
+              = link_to "Home"
+            %li
+              = link_to "Business Catelog"
+            %li
+              = link_to "Write a Review"
+            %li
+              = link_to "About Me"
+      .col-md-2#header-right
+        %ul
+          %li
+            %button.btn.btn-sm(type="submit") Sign Up
+          %li
+            %a(href="") Log In
