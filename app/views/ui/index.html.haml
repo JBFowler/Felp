@@ -1,8 +1,9 @@
-.row
-  .col-md-2
-    .btn-group-vertical{"aria-label" => "...", :role => "group"}
-      / %section.ui-index
-      - Dir.glob('app/views/ui/*.html.haml').sort.each do |file|
-        - wireframe = File.basename(file,'.html.haml')
-        -  unless wireframe == 'index' || wireframe.match(/^_/)
-          .btn.btn-default= link_to wireframe.titleize, action: wireframe unless wireframe == 'index'
+.container
+  .row
+    .col-md-2
+      .btn-group-vertical{"aria-label" => "...", :role => "group"}
+        / %section.ui-index
+        - Dir.glob('app/views/ui/*.html.haml').sort.each do |file|
+          - wireframe = File.basename(file,'.html.haml')
+          -  unless wireframe == 'index' || wireframe.match(/^_/)
+            .btn.btn-default= link_to wireframe.titleize, action: wireframe unless wireframe == 'index'
