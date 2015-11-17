@@ -11,12 +11,18 @@ header {
     darken($main-red, 1%) 20px*/
 
   border-bottom: 1px solid $dark-red;
-  -webkit-box-shadow: 0 0 6px $dark-gray;
+  -webkit-box-shadow: 0 2px 10px 10px $dark-gray;
 }
 
-.container {
-  padding-left: 50px;
-  padding-right: 50px;
+#main-body {
+  .container {
+    padding-top: 20px;
+    padding-left: 50px;
+    padding-right: 50px;
+    background-color: #FFFFFF;
+    border-left: 1px solid $medium-gray;
+    border-right: 1px solid $medium-gray;
+  }
 }
 
 ul {
@@ -24,5 +30,5 @@ ul {
 }
 
 #main-body {
-  margin-top: 10px;
+  background-color: $light-gray;
 }

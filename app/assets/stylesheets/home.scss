@@ -1,0 +1,21 @@
+#recent-reviews {
+  border-right: solid;
+  border-color: #d9d9d9;
+  border-width: 1px;
+}
+
+#top-businesses {
+  padding-left: 30px;
+}
+
+#account-creator {
+  padding-top: 10px;
+  padding-bottom: 30px;
+  h4 {
+    color: $main-red;
+    font-weight: bold;
+  }
+  a {
+    font-weight: bold;
+  }
+}
