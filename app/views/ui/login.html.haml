@@ -1,19 +1,20 @@
-%h3 Login
-%hr
-.well.col-md-6.col-md-offset-3
-  .form
-    .col-md-5
-      .form-group
-        %label Email Address
-        %input.form-control{:type => "Email", :placeholder => "Email Address"}
-      .form-group
-        %label Password
-        %input.form-control{:type => "Password", :placeholder => "Password"}
-      %button.btn.btn-success Login
-    .col-md-4.col-md-offset-2
-      %br
-      %br
-      %p.text-center
-        %strong Not yet signed up?
-      %p.text-center
-        %button.btn.btn-danger Sign Up
+.container#login-page
+  %h3 Login
+  %hr
+  .well.col-md-6.col-md-offset-3
+    .form
+      .col-md-5#credentials
+        .form-group
+          %label Email Address
+          %input.form-control{:type => "Email", :placeholder => "Email Address"}
+        .form-group
+          %label Password
+          %input.form-control{:type => "Password", :placeholder => "Password"}
+        %button.btn.btn-success Login
+      .col-md-4.col-md-offset-2
+        %br
+        %br
+        %p.text-center
+          %strong Not yet signed up?
+        %p.text-center
+          %button.btn.btn-danger Sign Up
