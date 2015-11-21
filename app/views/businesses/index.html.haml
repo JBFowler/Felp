@@ -1,0 +1,21 @@
+.container  
+  .h3 List of Businesses
+  %br
+  %br
+  .well
+    - @businesses.each do |business|
+      .row
+        .col-md-2
+          %h4= link_to(business.name, business_path(business))
+          .div
+            %span.glyphicon.glyphicon-star{:aria_hidden => "true"}
+            %span.glyphicon.glyphicon-star{:aria_hidden => "true"}
+            %span.glyphicon.glyphicon-star{:aria_hidden => "true"}
+            %span.glyphicon.glyphicon-star{:aria_hidden => "true"}
+            %span.glyphicon.glyphicon-star{:aria_hidden => "true"}
+        .col-md-2
+          = image_tag(business.image, class: "img-responsive")
+        .col-md-8
+          %p Pop-up chartreuse four loko, 8-bit kickstarter direct trade tattooed chia XOXO put a bird on it. Post-ironic fap kitsch truffaut you probably haven't heard of them hashtag.
+      %br
+      %br

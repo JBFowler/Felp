@@ -1,9 +1,6 @@
-require 'spec_helper'
+require 'rails_helper'
 
 describe Business do
-  it "saves itself" do
-    business = Business.new(name: "Harry's", description: "A local diner", city: "Birmingham", state: "AL")
-    business.save
-    expect(Business.first).to eq(business)
-  end
+  it { should validate_presence_of(:name) }
+  it { should validate_presence_of(:description) }
 end

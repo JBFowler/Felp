@@ -40,7 +40,7 @@ group :development do
 end
 
 group :test do
-  gem 'shoulda-matchers', '~> 3.0', '>= 3.0.1'
+  gem 'shoulda-matchers', '2.8'
   gem 'database_cleaner', '~> 1.5', '>= 1.5.1'
   gem 'fabrication', '~> 2.14', '>= 2.14.1'
   gem 'capybara', '~> 2.5'

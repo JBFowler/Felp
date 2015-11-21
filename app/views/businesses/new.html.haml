@@ -1,0 +1,21 @@
+.container
+  .h3.col-md-offset-2 Add Business
+  %br
+  .well.col-md-8.col-md-offset-2
+    = bootstrap_form_for @business do |f|
+      .row
+        .col-md-5
+          .form-group
+            = f.text_field :name, label: "Business Name", placeholder: "Name"
+          .form-group
+            = f.select :city_id, City.all.map{ |city| [city.name, city.id]}.sort
+          .form-group
+            = f.file_field :image, label: "Thumbnail"
+            %p.help-block Upload a .jpg image.
+        .col-md-7
+          .form-group
+            = f.text_area :description, placeholder: "Write Text Here", rows: 6
+      .row
+        .col-md-6
+          .form-group
+            = f.submit "Add Business", class: "btn btn-success"
